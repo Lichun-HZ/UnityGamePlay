@@ -1,2 +1,11 @@
 /Library
 /Temp
+.vs/
+PluginSource/CClient/Release/
+PluginSource/CClient/ARM/Release/libCClient.so
+PluginSource/CClient/ARM/Release/CTest.o
+PluginSource/CClient/ARM/Release/libCClient.so.recipe
+PluginSource/CClient/ARM/
+PluginSource/CClient/Debug/
+PluginSource/CClient/x64/
+UnityGamePlay.apk

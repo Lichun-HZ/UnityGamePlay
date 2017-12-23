@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Demos/NativePlugin/NativePluginScene.unity
+    guid: 1cb90f758de0ac645b0cc101f0a6db6c
