@@ -13,15 +13,108 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ECS">
+      <UniqueIdentifier>{ff024102-b1d9-4a52-91bf-ccfcbb2c0e08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Src">
+      <UniqueIdentifier>{92dc5e49-5110-4376-b134-813c41fb7938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Src\detail">
+      <UniqueIdentifier>{13631d4e-4607-4415-908e-92a9ece3044a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Include">
+      <UniqueIdentifier>{4b112445-d2fc-4e4a-8b1b-04f25778f9d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Include\detail">
+      <UniqueIdentifier>{f45ef224-682a-4a39-ac67-106c9d578639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS\Include\Util">
+      <UniqueIdentifier>{b32f0498-1616-4d2a-9967-92d6571d6f69}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ECSAnax\src\anax\detail\BaseSystem.cpp">
+      <Filter>ECS\Src\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="ECSAnax\src\anax\detail\EntityComponentStorage.cpp">
+      <Filter>ECS\Src\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="ECSAnax\src\anax\detail\EntityIdPool.cpp">
+      <Filter>ECS\Src\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="ECSAnax\src\anax\detail\Filter.cpp">
+      <Filter>ECS\Src\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="ECSAnax\src\anax\Entity.cpp">
+      <Filter>ECS\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ECSAnax\src\anax\World.cpp">
+      <Filter>ECS\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\MovementSystem.cpp">
+      <Filter>ECS</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CTest.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\anax.hpp">
+      <Filter>ECS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\Component.hpp">
+      <Filter>ECS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\Entity.hpp">
+      <Filter>ECS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\FilterOptions.hpp">
+      <Filter>ECS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\System.hpp">
+      <Filter>ECS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\World.hpp">
+      <Filter>ECS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\AnaxAssert.hpp">
+      <Filter>ECS\Include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\BaseSystem.hpp">
+      <Filter>ECS\Include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\ClassTypeId.hpp">
+      <Filter>ECS\Include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\ComponentTypeList.hpp">
+      <Filter>ECS\Include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\EntityComponentStorage.hpp">
+      <Filter>ECS\Include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\EntityIdPool.hpp">
+      <Filter>ECS\Include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\Filter.hpp">
+      <Filter>ECS\Include\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\util\ContainerUtils.hpp">
+      <Filter>ECS\Include\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\Config.hpp">
+      <Filter>ECS\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\MovementSystem.hpp">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\TransformComponent.hpp">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="ECS\VelocityComponent.hpp">
+      <Filter>ECS</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

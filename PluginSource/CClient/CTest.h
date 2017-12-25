@@ -32,4 +32,6 @@ extern "C"
 
 	void EXPORT_API MonoBehaviourUpdate(int thisHandle);
 
+	void InternalransformSetPosition(int thisHandle, Vector3 position);
+
 }

@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{9604E54D-2866-487E-B17E-2662BE28320E}</ProjectGuid>
     <RootNamespace>CClient</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -47,7 +47,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -105,6 +105,8 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./ECSAnax/include</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -113,9 +115,34 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CTest.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\detail\BaseSystem.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\detail\EntityComponentStorage.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\detail\EntityIdPool.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\detail\Filter.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\Entity.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\World.cpp" />
+    <ClCompile Include="ECS\MovementSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CTest.h" />
+    <ClInclude Include="ECSAnax\include\anax\anax.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\Component.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\Config.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\AnaxAssert.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\BaseSystem.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\ClassTypeId.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\ComponentTypeList.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\EntityComponentStorage.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\EntityIdPool.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\Filter.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\Entity.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\FilterOptions.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\System.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\util\ContainerUtils.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\World.hpp" />
+    <ClInclude Include="ECS\MovementSystem.hpp" />
+    <ClInclude Include="ECS\TransformComponent.hpp" />
+    <ClInclude Include="ECS\VelocityComponent.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
