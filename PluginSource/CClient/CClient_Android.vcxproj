@@ -36,9 +36,34 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CTest.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\detail\BaseSystem.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\detail\EntityComponentStorage.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\detail\EntityIdPool.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\detail\Filter.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\Entity.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\World.cpp" />
+    <ClCompile Include="ECS\MovementSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CTest.h" />
+    <ClInclude Include="ECSAnax\include\anax\anax.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\Component.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\Config.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\AnaxAssert.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\BaseSystem.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\ClassTypeId.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\ComponentTypeList.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\EntityComponentStorage.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\EntityIdPool.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\detail\Filter.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\Entity.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\FilterOptions.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\System.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\util\ContainerUtils.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\World.hpp" />
+    <ClInclude Include="ECS\MovementSystem.hpp" />
+    <ClInclude Include="ECS\TransformComponent.hpp" />
+    <ClInclude Include="ECS\VelocityComponent.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{01a92dbf-c1ba-4653-b274-52301c88463e}</ProjectGuid>
@@ -159,13 +184,24 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>./ECSAnax/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <CLanguageStandard>Default</CLanguageStandard>
     </ClCompile>
+    <Link>
+      <AdditionalOptions>-lm %(AdditionalOptions)</AdditionalOptions>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>./ECSAnax/include;$(Sysroot)\usr\include;$(StlIncludeDirectories)%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
     </ClCompile>
+    <Link>
+      <AdditionalOptions>-lm %(AdditionalOptions)</AdditionalOptions>
+    </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

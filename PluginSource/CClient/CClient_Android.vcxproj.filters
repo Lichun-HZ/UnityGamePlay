@@ -2,8 +2,80 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="CTest.cpp" />
+    <ClCompile Include="ECSAnax\src\anax\Entity.cpp">
+      <Filter>Anax</Filter>
+    </ClCompile>
+    <ClCompile Include="ECSAnax\src\anax\World.cpp">
+      <Filter>Anax</Filter>
+    </ClCompile>
+    <ClCompile Include="ECSAnax\src\anax\detail\BaseSystem.cpp">
+      <Filter>Anax</Filter>
+    </ClCompile>
+    <ClCompile Include="ECSAnax\src\anax\detail\EntityComponentStorage.cpp">
+      <Filter>Anax</Filter>
+    </ClCompile>
+    <ClCompile Include="ECSAnax\src\anax\detail\EntityIdPool.cpp">
+      <Filter>Anax</Filter>
+    </ClCompile>
+    <ClCompile Include="ECSAnax\src\anax\detail\Filter.cpp">
+      <Filter>Anax</Filter>
+    </ClCompile>
+    <ClCompile Include="ECS\MovementSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CTest.h" />
+    <ClInclude Include="ECS\MovementSystem.hpp" />
+    <ClInclude Include="ECS\TransformComponent.hpp" />
+    <ClInclude Include="ECS\VelocityComponent.hpp" />
+    <ClInclude Include="ECSAnax\include\anax\anax.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\Component.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\Config.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\Entity.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\FilterOptions.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\System.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\World.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\AnaxAssert.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\BaseSystem.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\ClassTypeId.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\ComponentTypeList.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\EntityComponentStorage.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\EntityIdPool.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\detail\Filter.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSAnax\include\anax\util\ContainerUtils.hpp">
+      <Filter>Anax</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Anax">
+      <UniqueIdentifier>{149f9500-0b09-41f6-8ca9-6d5a2f49eee0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

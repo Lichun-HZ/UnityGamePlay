@@ -39,8 +39,8 @@ void MovementSystem::update(double deltaTime)
 		if (pos.x > 7.0f)
 			pos.x = -2.0f;
 
-		float comp = (float)velocity;
-		Vector3 position = { comp*((rand()%1000)/2000.0f), comp*((rand() % 1000) / 1000.0f), comp*((rand() % 1000) / 1000.0f) };
+		//float comp = (float)velocity;
+		//Vector3 position = { comp*((rand()%1000)/2000.0f), comp*((rand() % 1000) / 1000.0f), comp*((rand() % 1000) / 1000.0f) };
 		InternalransformSetPosition(transformHandle, pos);
     }
 }
